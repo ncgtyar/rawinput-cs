@@ -1,6 +1,11 @@
 # rawinput-cs
-## C# wrapper for RawInput features from user32.dll
-This was a very quick project and definitely has needed improvements, feel free to edit it however
+## C# wrapper for RawInput features from `user32.dll`
+This is a very minimal wrapper and definitely needs improvements, edit it however you want. Note that this only covers a small amount of events (mouse move and click, keyboard press) and others like mouse wheel are not included and you must implement them yourself if you want to use them. 
+
+### What is Raw Input?
+Raw Input is a Windows API that lets applications receive unprocessed and low level input data directly from keyboards, mice, and other HIDs.
+*for example: if you turn it on in a game, Windows' default mouse acceleration will be ignored as it now receives the data from `RawInput`*
+
 ### How to use
 ```
 RawInput rawInput;
