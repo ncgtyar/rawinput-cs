@@ -4,7 +4,7 @@ This is a very minimal wrapper and definitely needs improvements, edit it howeve
 
 ### What is Raw Input?
 Raw Input is a Windows API that lets applications receive unprocessed and low level input data directly from keyboards, mice, and other HIDs.
-*for example: if you turn it on in a game, Windows' default mouse acceleration will be ignored as it now receives the data from `RawInput`*
+*for example: if you turn it on in a game, Windows' default mouse acceleration will be ineffective as it now receives the data from `RawInput`*
 
 ### How to use
 ```
