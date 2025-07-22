@@ -27,12 +27,8 @@ protected override void OnHandleCreated(EventArgs e)
 
 protected override void WndProc(ref Message m)
 {
-    const int WM_INPUT = 0x00FF;
-
-    if (m.Msg == WM_INPUT)
-    {
+    if (m.Msg == 0x00FF) //WM_INPUT
         rawInput.ProcessInputMessage(m.LParam);
-    }
 
     base.WndProc(ref m);
 }
